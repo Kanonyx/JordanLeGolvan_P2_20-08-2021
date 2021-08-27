@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-areas: "logo . slide signup";
+  align-items: center;
+}
+
+.logo {
+  grid-area: logo;
+  padding: 2rem;
+}
+
+.slide {
+  display: flex;
+  text-align: center;
+  grid-area: slide;
+}
+
+.hostbtn {
+  padding: 2rem;
+  border-top: 3px solid #0065fc;
+  
+}
+
+.activity{
+padding: 2rem 3rem;
+}
+
+.activity:hover {
+    border-top: 3px solid #0065fc;
+  }
+
+
+.signup {
+  grid-area: signup;
+  font-weight: bold;
+  color: #0065fc;
+  padding: 2rem;
+}
+
+
+
+@media (max-width: 800px) {
+  nav {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . signup" "slide slide slide";
+  }
+  
+  .signup {
+    order: 1;
+  }
+  .slide {
+    order: 2;
+  }
+  .activity,
+  .hostbtn {
+    border-top: none;
+    border-bottom: 3px solid #f2f2f2;
+    flex-basis: 50%;
+    align-items: center;
+  }
+  .hostbtn {
+    border-bottom-color: #0065fc;
+  }
+  .activity:hover {
+    border-bottom-color: #0065fc;
+    border-top: none
+  }
+}
