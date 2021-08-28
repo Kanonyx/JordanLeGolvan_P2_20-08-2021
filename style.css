@@ -8,6 +8,12 @@ a {
   color: inherit;
 }
 
+
+
+/*--------------HEADER----------------*/
+
+
+
 nav {
   display: grid;
   grid-template-columns: auto 1fr auto auto;
@@ -17,7 +23,7 @@ nav {
 
 .logo {
   grid-area: logo;
-  padding: 2rem;
+  padding-left: 1rem;
 }
 
 .slide {
@@ -29,15 +35,18 @@ nav {
 .hostbtn {
   padding: 2rem;
   border-top: 3px solid #0065fc;
+  color: #0065fc;
   
 }
 
 .activity{
 padding: 2rem 3rem;
+border-top: transparent 3px;
 }
 
 .activity:hover {
     border-top: 3px solid #0065fc;
+    color: #0065fc;
   }
 
 
@@ -47,7 +56,6 @@ padding: 2rem 3rem;
   color: #0065fc;
   padding: 2rem;
 }
-
 
 
 @media (max-width: 800px) {
@@ -75,5 +83,22 @@ padding: 2rem 3rem;
   .activity:hover {
     border-bottom-color: #0065fc;
     border-top: none
+    
+    
   }
+}
+
+/*-------------SEARCHBOX-----------*/
+
+
+.searcharea {
+  margin: 2rem;
+}
+
+.searchboxzone {
+  display: inline-flex;
+}
+
+.searchform{
+  width: rem;
 }
