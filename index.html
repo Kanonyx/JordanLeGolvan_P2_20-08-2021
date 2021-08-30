@@ -1,54 +1,66 @@
 <!DOCTYPE html>
-    <html>
+<html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Reservia</title>
-        <meta name="description" content="Trouver votre hébergement pour des vacances de rêve">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
-        <link href="fonts/css/all.css" rel="stylesheet" />
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Reservia</title>
+    <meta name="description" content="Trouver votre hébergement pour des vacances de rêve">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <link href="fonts/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
-        <header>
-            <nav>
-                <div class="logo">
-                    <img src="/images/logo/Reservia.svg" alt="Reservia">
-                </div>
-                <div class="slide">
-                    <div class="hostbtn"><a href="#">Hébergement</a></div>
-                    <div class="activity"><a href="#">Activités</a></div>
-                </div>
-                <div class="signup"><a href="#">S'inscrire</a></div>
-            </nav>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/images/logo/Reservia.svg" alt="Reservia">
+            </div>
+            <div class="slide">
+                <div class="hostbtn"><a href="#">Hébergement</a></div>
+                <div class="activity"><a href="#">Activités</a></div>
+            </div>
+            <div class="signup"><a href="#">S'inscrire</a></div>
+        </nav>
 
-        </header>
+    </header>
 
-<section class="searcharea">
-    <div class="searchtitle">
-        <h1><strong>Trouvez votre hébergement pour des vacances de rêve.</strong> </h1>
-        <p>En plein centre ville ou en pleine nature.</p>
-    </div>
-    <div class="searchboxzone">
-        <div class="mapsicon">
-            <i class="fas fa-map-marker-alt searchFormWrapiconIcon"></i>
+    <section class="searcharea">
+        <div class="searchtitle">
+            <h1><strong>Trouvez votre hébergement pour des vacances de rêve.</strong> </h1>
+            <p>En plein centre ville ou en pleine nature.</p>
         </div>
-        <div class="searchform">
-            <input class="searchFormSearchinput" type="search" placeholder="Marseille, France" size="30">
+        <div class="searchboxzone">
+
+            <form>
+                <div class="mapsicon">
+                    <i class="fas fa-map-marker-alt searchFormWrapiconIcon"></i>
+                </div>
+                <input type="text" name="search" placeholder="Marseille, France">
+                <button type="submit"><strong>Rechercher</strong></button>
+            </form>
+
+    </section>
+
+    <section class="filters">
+        <div class="filtertitle">
+            <p>Filtres</p>
         </div>
-        <button>
-            Rechercher
-        </button>
-    </div>
+        <div class="filter">
+            <div class="filtericons">
+                <i class="fas fa-money-bill-wave searchFiltersFilterWrapiconIcon"></i>
+            </div>
+            <div class="filtername">
+                Economique
+            </div>
+        </div>
 
+    </section>
 
-</section>
+</body>
 
-    </body>
-
-    </html>
+</html>

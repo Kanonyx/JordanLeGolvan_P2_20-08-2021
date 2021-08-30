@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
+  border-top: none;
 }
 
 a {
@@ -8,11 +9,7 @@ a {
   color: inherit;
 }
 
-
-
 /*--------------HEADER----------------*/
-
-
 
 nav {
   display: grid;
@@ -23,7 +20,7 @@ nav {
 
 .logo {
   grid-area: logo;
-  padding-left: 1rem;
+  padding-left: 0.75rem;
 }
 
 .slide {
@@ -36,19 +33,18 @@ nav {
   padding: 2rem;
   border-top: 3px solid #0065fc;
   color: #0065fc;
-  
 }
 
-.activity{
-padding: 2rem 3rem;
-border-top: transparent 3px;
+.activity {
+  padding: 2rem 3rem;
+  border-top: transparent 3px;
+  text-align: center;
 }
 
 .activity:hover {
-    border-top: 3px solid #0065fc;
-    color: #0065fc;
-  }
-
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+}
 
 .signup {
   grid-area: signup;
@@ -56,14 +52,19 @@ border-top: transparent 3px;
   color: #0065fc;
   padding: 2rem;
 }
-
+.searchtitle h1 {
+  font-size: 1rem;
+}
+.searchtitle p {
+  font-size: 0.75rem;
+}
 
 @media (max-width: 800px) {
   nav {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . signup" "slide slide slide";
   }
-  
+
   .signup {
     order: 1;
   }
@@ -82,14 +83,11 @@ border-top: transparent 3px;
   }
   .activity:hover {
     border-bottom-color: #0065fc;
-    border-top: none
-    
-    
+    border-top: none;
   }
 }
 
 /*-------------SEARCHBOX-----------*/
-
 
 .searcharea {
   margin: 2rem;
@@ -99,6 +97,69 @@ border-top: transparent 3px;
   display: inline-flex;
 }
 
-.searchform{
-  width: rem;
+form {
+  border-top: none;
+  border-bottom: none;
+  display: inline-flex;
+}
+
+.mapsicon {
+  padding: 0.65rem 1rem;
+  background-color: #f2f2f2;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+
+input {
+  border-top: #f2f2f2 solid 2px;
+  border-bottom: #f2f2f2 solid 2px;
+  border-left: none;
+  border-right: none;
+  padding: 0.75rem;
+}
+
+input::placeholder {
+  color: black;
+  font-weight: bold;
+}
+
+button {
+  padding: 0.85rem;
+  border: none;
+  background-color: #0065fc;
+  font-family: "raleway";
+  border-radius: 0rem 1rem 1rem 0rem;
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+/*------------FILTERS-------------*/
+
+
+section{
+  margin: 1rem;
+}
+
+.filter{
+  padding: 0.5rem 1rem;
+  display: inline-flex; 
+  border-top: #f2f2f2 solid 3px ;
+  border-bottom: #f2f2f2 solid 3px;
+  border-left: #f2f2f2 solid 3px;
+  border-right: #f2f2f2 solid 3px;
+  border-radius: 2rem 2rem 2rem 2rem ;
+}
+
+.filtericons {
+  padding-right: 1.5rem;
+  border-radius: 100%  ;
+  background-color: aqua;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+
+  
 }
