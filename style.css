@@ -1,5 +1,5 @@
 body {
-  margin: 0 ;
+  margin: 0;
   font-family: "Raleway", "sans-serif";
 }
 
@@ -15,6 +15,8 @@ nav {
   grid-template-columns: auto 1fr auto auto;
   grid-template-areas: "logo . slide signup";
   align-items: center;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .logo {
@@ -104,7 +106,7 @@ form {
 }
 
 .mapsicon {
-  padding: 0.45rem 0.8rem;
+  padding: 0.65rem 0.9rem;
   background-color: #f2f2f2;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
@@ -135,14 +137,14 @@ button {
   align-items: center;
 }
 
-.searchFormSubmitinputIcon {
+.fa-search {
   display: none;
 }
 @media (max-width: 800px) {
   button span {
     display: none;
   }
-  .searchFormSubmitinputIcon {
+  .fa-search {
     display: initial;
     padding: 0 0.2rem;
   }
@@ -150,23 +152,27 @@ button {
 
 /*------------FILTERS-------------*/
 
-
-.filters{
+.filters {
   margin: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
 }
 
+.filters :hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.filtertitle :hover {
+  background-color: rgb(131, 173, 197);
+}
 
 .filter {
- margin-bottom: 1rem;
- margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
   display: flex;
   text-align: center;
   align-items: center;
-  
 }
 
 .filtericons {
@@ -178,13 +184,12 @@ button {
   align-items: center;
   justify-content: center;
   color: #0065fc;
-  margin: -2px;
   position: absolute;
 }
 
 .filtertitle {
   align-items: center;
-  margin-right: 1rem  ;
+  margin-right: 1rem;
 }
 
 .filternameeco {
@@ -198,7 +203,6 @@ button {
   justify-content: center;
   font-size: 0.85rem;
   font-weight: bold;
-
   text-align: right;
 }
 
@@ -245,9 +249,106 @@ button {
   width: max-content;
 }
 
-@media (max-width: 800px){
+.result {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  border-color: #f2f2f2 8px solid;
+  margin: 1rem;
+}
+
+.infologo {
+  margin-right: 0.5rem;
+  padding: 0.3rem;
+  color: #0065fc;
+  border: 2px solid #f2f2f2;
+  justify-content: center;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 0.5rem;
+  width: 0.5rem;
+  height: 00.5rem;
+}
+
+@media (max-width: 800px) {
   .filtertitle {
     flex-basis: 100%;
   }
+}
 
+/*------------RESULT AREA-------------*/
+
+.popular {
+  background-color: #f2f2f2;
+  max-width: 800px;
+  font-weight: bold;
+  padding: 2rem;
+}
+
+.poptitle {
+  display: flex;
+  padding: 1rem 0rem;
+  justify-content: space-between;
+}
+
+.popcardarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardtextarea {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.popcard {
+  display: flex;
+  padding: 0.3rem;
+  background-color: white;
+  border-radius: 1rem 1rem 1rem 1rem;
+  min-width: 20rem;
+  max-width: 20rem;
+  max-height: 8rem;
+  box-shadow: 0 0 16px #0000002e;
+  margin: 0.3rem;
+}
+.popcardarea :hover {
+  transform: scale(1.02);
+}
+
+.popcardimg {
+  border-radius: 1rem 0rem 0rem 1rem;
+  overflow: hidden;
+  min-width: 0;
+  max-width: 8rem;
+  min-height: 0;
+  height: 8rem;
+  display: flex;
+}
+
+.cardtitle {
+  margin: 0.5rem 2rem;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.whitespacepop {
+  padding: 1.5rem;
+}
+
+.cardsubtitle {
+  font-weight: lighter;
+  margin-bottom: max;
+  font-size: 0.8rem;
+  padding-top: 0.3rem;
+}
+
+.fullstar {
+  color: #0065fc;
+}
+.empty {
+  color: #55535c2f;
 }
