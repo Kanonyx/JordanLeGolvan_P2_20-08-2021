@@ -16,7 +16,6 @@ nav {
   grid-template-areas: "logo . slide signup";
   align-items: center;
   font-size: 0.9rem;
-  font-weight: bold;
 }
 
 .logo {
@@ -38,7 +37,7 @@ nav {
 
 .activity {
   padding: 2rem 2rem;
-  border-top: transparent 3px;
+  border-top: transparent 3px solid;
   text-align: center;
 }
 
@@ -106,7 +105,7 @@ form {
 }
 
 .mapsicon {
-  padding: 0.65rem 0.9rem;
+  padding: 0.55rem 0.8rem;
   background-color: #f2f2f2;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
@@ -137,18 +136,20 @@ button {
   align-items: center;
 }
 
-.fa-search {
+.searchFormSubmitinputIcon {
   display: none;
 }
 @media (max-width: 800px) {
   button span {
     display: none;
   }
-  .fa-search {
+  .searchFormSubmitinputIcon {
     display: initial;
     padding: 0 0.2rem;
   }
 }
+
+/*------------FILTERS-------------*/
 
 /*------------FILTERS-------------*/
 
@@ -276,79 +277,143 @@ button {
   }
 }
 
-/*------------RESULT AREA-------------*/
+/*-------------------MAIN SECTION--------------------*/
 
-.popular {
-  background-color: #f2f2f2;
-  max-width: 800px;
-  font-weight: bold;
-  padding: 2rem;
+.main {
+  display: flex;
 }
 
-.poptitle {
+.popular {
+  margin: 1rem;
+
+  order: 1;
+  flex-basis: 33%;
+  border-radius: 1rem;
+  background-color: #f2f2f2;
+  align-items: center;
+}
+
+.host {
+  margin: 1rem;
+  flex-basis: 66%;
+  border-radius: 1rem;
+  background-color: #f2f2f2;
+}
+
+.hostcardarea {
+  justify-content: space-around;
   display: flex;
-  padding: 1rem 0rem;
-  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem;
 }
 
 .popcardarea {
+  padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 2rem;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.hostcard {
+  padding: 0.4rem;
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  flex-grow: 1;
+  background-color: white;
+  display: flex;
+  max-width:20rem;
+}
+
+.cardimg  {
+ 
+  border-radius: 1rem 0 0 1rem;
+  flex-basis: 33%;
+  
+}
+
+.cardimg img{
+  border-radius: 1rem 0 0 1rem;
+  max-width: 100%;
+   max-height: 100%;
+   display: block;
+}
+
+.cardtextarea {
+  flex-basis: 66%;
+  font-size: 0.5rem;
+}
+
+.hostcard:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.popcard {
+  padding: 2rem;
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  flex-grow: 1;
+  background-color: white;
+}
+
+.popcard:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.main h3 {
+  margin: 1rem;
+}
+
+.afplus {
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.blue {
+  color: #0065fc;
+}
+
+.grey {
+  color: #bbb7b7;
 }
 
 .cardtextarea {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  font-size: 00.9rem;
+  flex-basis: 66%;
+  justify-content:space-between;
+
 }
-.popcard {
-  display: flex;
-  padding: 0.3rem;
-  background-color: white;
-  border-radius: 1rem 1rem 1rem 1rem;
-  min-width: 20rem;
-  max-width: 20rem;
-  max-height: 8rem;
-  box-shadow: 0 0 16px #0000002e;
-  margin: 0.3rem;
-}
-.popcardarea :hover {
-  transform: scale(1.02);
+.star{
+  margin-top:auto;
 }
 
-.popcardimg {
-  border-radius: 1rem 0rem 0rem 1rem;
-  overflow: hidden;
-  min-width: 0;
-  max-width: 8rem;
-  min-height: 0;
-  height: 8rem;
-  display: flex;
-}
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
 
-.cardtitle {
-  margin: 0.5rem 2rem;
-  font-size: 0.9rem;
-  display: flex;
-  flex-direction: column;
-}
+  .popular {
+    margin: inherit;
+    border-radius: inherit;
+    order: -1;
+    background-color: #f2f2f2;
+  }
 
-.whitespacepop {
-  padding: 1.5rem;
-}
+  .host {
+    margin: inherit;
+    border-radius: inherit;
+    background-color: inherit;
+  }
 
-.cardsubtitle {
-  font-weight: lighter;
-  margin-bottom: max;
-  font-size: 0.8rem;
-  padding-top: 0.3rem;
-}
-
-.fullstar {
-  color: #0065fc;
-}
-.empty {
-  color: #55535c2f;
+  .hostcardarea {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: inherit;
+  }
 }
