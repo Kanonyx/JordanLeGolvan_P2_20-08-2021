@@ -1,6 +1,8 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Raleway", "sans-serif";
+
+  max-width: 1440px;
 }
 
 a {
@@ -15,7 +17,7 @@ nav {
   grid-template-columns: auto 1fr auto auto;
   grid-template-areas: "logo . slide signup";
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .logo {
@@ -105,7 +107,7 @@ form {
 }
 
 .mapsicon {
-  padding: 0.55rem 0.8rem;
+  padding: 0.85rem 1rem;
   background-color: #f2f2f2;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
@@ -154,7 +156,7 @@ button {
 /*------------FILTERS-------------*/
 
 .filters {
-  margin: 1rem;
+  margin: 0 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -283,80 +285,68 @@ button {
   display: flex;
 }
 
+/*--------POPULAR SECTION-------*/
+
 .popular {
   margin: 1rem;
 
   order: 1;
-  flex-basis: 33%;
+  flex-basis: 30%;
   border-radius: 1rem;
   background-color: #f2f2f2;
   align-items: center;
 }
 
-.host {
-  margin: 1rem;
-  flex-basis: 66%;
-  border-radius: 1rem;
-  background-color: #f2f2f2;
-}
-
-.hostcardarea {
-  justify-content: space-around;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin: 1rem;
-}
-
 .popcardarea {
-  padding: 0rem 1rem;
+  padding: 0rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  justify-content: space-around;
+  
   margin-bottom: 2rem;
 }
 
-.hostcard {
+.popcard {
   padding: 0.4rem;
   box-shadow: 0 0 16px #0000002e;
   border-radius: 1rem;
-  flex-grow: 1;
   background-color: white;
   display: flex;
-  max-width:20rem;
+  height: 20rem;
+  min-width: 15rem;
+  
 }
 
-.cardimg  {
- 
+.popcardimg {
+  object-fit: cover;
+  
+}
+
+.popcardimg img {
   border-radius: 1rem 0 0 1rem;
+  width: 7rem;
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
   flex-basis: 33%;
   
 }
 
-.cardimg img{
-  border-radius: 1rem 0 0 1rem;
-  max-width: 100%;
-   max-height: 100%;
-   display: block;
-}
-
 .cardtextarea {
-  flex-basis: 66%;
+  flex-basis: auto;
   font-size: 0.5rem;
 }
 
-.hostcard:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-}
-
 .popcard {
-  padding: 2rem;
+  padding: 0.4rem;
   box-shadow: 0 0 16px #0000002e;
   border-radius: 1rem;
-  flex-grow: 1;
   background-color: white;
+  display: flex;
+  min-width: 15rem;
+  height: 8rem;
+  box-sizing: border-box;
 }
 
 .popcard:hover {
@@ -366,11 +356,6 @@ button {
 
 .main h3 {
   margin: 1rem;
-}
-
-.afplus {
-  padding: 1rem;
-  margin-top: auto;
 }
 
 .blue {
@@ -385,12 +370,66 @@ button {
   display: flex;
   flex-direction: column;
   font-size: 00.9rem;
-  flex-basis: 66%;
-  justify-content:space-between;
-
+  justify-content: space-between;
+  padding: 0.5rem;
 }
-.star{
-  margin-top:auto;
+.star {
+  margin-top: 4rem;
+}
+
+/*--------HOST SECTION-------*/
+
+.hostcardarea {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  grid-auto-flow: column;
+  grid-template-areas: ". . ." ". . .";
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.host {
+  margin: 1rem;
+  flex-basis: 70%;
+  border-radius: 1rem;
+  background-color: #f2f2f2;
+}
+
+.hostcard {
+  padding: 0.4rem;
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-width: 13rem;
+  flex-basis: 25%;
+  
+}
+
+.whitespace {
+  padding: 0 02rem;
+}
+
+.hostcardimg {
+}
+
+.hostcardimg img {
+  border-radius: 1rem 1rem 0 0;
+  height: 7rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hostcard:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.afplus {
+  padding: 1rem;
+  margin: 0 0 1 0;
 }
 
 @media (max-width: 800px) {
