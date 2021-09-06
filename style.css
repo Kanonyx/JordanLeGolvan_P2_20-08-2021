@@ -76,7 +76,7 @@ nav {
   .activity,
   .hostbtn {
     border-top: none;
-    border-bottom: 3px solid #f2f2f2;
+    border-bottom: 3px solid #eeeeee;
     flex-basis: 50%;
     align-items: center;
   }
@@ -108,14 +108,14 @@ form {
 
 .mapsicon {
   padding: 0.85rem 1rem;
-  background-color: #f2f2f2;
+  background-color: #eeeeee;
   border-radius: 1rem 0 0 1rem;
   text-align: center;
 }
 
 input {
-  border-top: #f2f2f2 solid 2px;
-  border-bottom: #f2f2f2 solid 2px;
+  border-top: #eeeeee solid 2px;
+  border-bottom: #eeeeee solid 2px;
   border-left: none;
   border-right: none;
   padding: 0.45rem;
@@ -197,10 +197,10 @@ button {
 
 .filternameeco {
   padding: 1rem 1rem 1rem 4rem;
-  border-top: #f2f2f2 solid 3px;
-  border-bottom: #f2f2f2 solid 3px;
+  border-top: #eeeeee solid 3px;
+  border-bottom: #eeeeee solid 3px;
   border-left: none;
-  border-right: #f2f2f2 solid 3px;
+  border-right: #eeeeee solid 3px;
   border-radius: 2rem 2rem 2rem 2rem;
   align-items: center;
   justify-content: center;
@@ -211,10 +211,10 @@ button {
 
 .filternamefam {
   padding: 1rem 1rem 1rem 4rem;
-  border-top: #f2f2f2 solid 3px;
-  border-bottom: #f2f2f2 solid 3px;
+  border-top: #eeeeee solid 3px;
+  border-bottom: #eeeeee solid 3px;
   border-left: none;
-  border-right: #f2f2f2 solid 3px;
+  border-right: #eeeeee solid 3px;
   border-radius: 2rem 2rem 2rem 2rem;
   align-items: center;
   justify-content: center;
@@ -225,10 +225,10 @@ button {
 
 .filternamerom {
   padding: 1rem 1rem 1rem 4rem;
-  border-top: #f2f2f2 solid 3px;
-  border-bottom: #f2f2f2 solid 3px;
+  border-top: #eeeeee solid 3px;
+  border-bottom: #eeeeee solid 3px;
   border-left: none;
-  border-right: #f2f2f2 solid 3px;
+  border-right: #eeeeee solid 3px;
   border-radius: 2rem 2rem 2rem 2rem;
   align-items: center;
   justify-content: center;
@@ -239,10 +239,10 @@ button {
 
 .filternameani {
   padding: 1rem 1rem 1rem 4rem;
-  border-top: #f2f2f2 solid 3px;
-  border-bottom: #f2f2f2 solid 3px;
+  border-top: #eeeeee solid 3px;
+  border-bottom: #eeeeee solid 3px;
   border-left: none;
-  border-right: #f2f2f2 solid 3px;
+  border-right: #eeeeee solid 3px;
   border-radius: 2rem 2rem 2rem 2rem;
   align-items: center;
   justify-content: center;
@@ -256,7 +256,7 @@ button {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
-  border-color: #f2f2f2 8px solid;
+  border-color: #eeeeee 8px solid;
   margin: 1rem;
 }
 
@@ -264,7 +264,7 @@ button {
   margin-right: 0.5rem;
   padding: 0.3rem;
   color: #0065fc;
-  border: 2px solid #f2f2f2;
+  border: 2px solid #eeeeee;
   justify-content: center;
   text-align: center;
   border-radius: 100%;
@@ -289,12 +289,11 @@ button {
 
 .popular {
   margin: 1rem;
- 
+
   order: 1;
   flex-basis: 30%;
   border-radius: 1rem;
-  background-color: #f2f2f2;
-  
+  background-color: #eeeeee;
 }
 
 .popcardarea {
@@ -314,13 +313,11 @@ button {
   display: flex;
   height: 20rem;
   min-width: 15rem;
-  margin-top:  minimize;
-  
+  margin-top: minimize;
 }
 
 .popcardimg {
   object-fit: cover;
-  
 }
 
 .popcardimg img {
@@ -331,7 +328,6 @@ button {
   height: 100%;
   max-height: 100%;
   flex-basis: 33%;
-  
 }
 
 .cardtextarea {
@@ -347,7 +343,6 @@ button {
   display: flex;
   min-width: 15rem;
   height: 8rem;
-  box-sizing: border-box;
 }
 
 .popcard:hover {
@@ -357,16 +352,15 @@ button {
 
 .host h3 {
   margin: 1rem;
-  height:1rem;
+  height: 1rem;
   padding: 1rem;
 }
-
 
 .poptitle {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
+
   padding: 1rem 0rem 2rem 0;
 }
 
@@ -405,7 +399,7 @@ button {
   margin: 1rem;
   flex-basis: 70%;
   border-radius: 1rem;
-  background-color: #f2f2f2;
+  background-color: #eeeeee;
 }
 
 .hostcard {
@@ -417,14 +411,10 @@ button {
   flex-direction: column;
   min-width: 13rem;
   flex-basis: 25%;
-  
 }
 
 .whitespace {
   padding: 0 02rem;
-}
-
-.hostcardimg {
 }
 
 .hostcardimg img {
@@ -453,7 +443,7 @@ button {
     margin: inherit;
     border-radius: inherit;
     order: -1;
-    background-color: #f2f2f2;
+    background-color: #eeeeee;
   }
 
   .host {
@@ -467,4 +457,181 @@ button {
     flex-direction: column;
     flex-wrap: inherit;
   }
+}
+
+/*--------ACTIVITY SECTION-------*/
+
+.activitys {
+  margin: 1rem;
+}
+.activarea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.activcard1 {
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 13rem;
+}
+.activcardimg1 img {
+  border-radius: 1rem 1rem 0 0;
+  height: 18rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.activcard2 {
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  width: 14rem;
+  flex-basis: 60%;
+  flex-grow: 1;
+}
+
+.activcardimg2 img {
+  border-radius: 1rem 1rem 0 0;
+  height: 9rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.activcard3 {
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-height: 10rem;
+  width: 14rem;
+}
+
+.activcardimg3 img {
+  border-radius: 1rem 1rem 0 0;
+  height: 6rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.activsubdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.activcard4 {
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 13rem;
+}
+.activcardimg4 img {
+  border-radius: 1rem 1rem 0 0;
+  height: 18rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.activcard5 {
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-height: 10rem;
+  min-width: 14rem;
+}
+
+.activcardimg5 img {
+  border-radius: 1rem 1rem 0 0;
+  height: 7.5rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.activcard6 {
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-height: 10rem;
+  min-width: 14rem;
+}
+
+.activcardimg6 img {
+  border-radius: 1rem 1rem 0 0;
+  height: 7.5rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .activcard1,
+  .activcard2,
+  .activcard3,
+  .activcard4,
+  .activcard5,
+  .activcard6 {
+    box-shadow: 0 0 16px #0000002e;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-height: 10rem;
+    min-width: 14rem;
+    width: inherit;
+    max-width: inherit;
+  }
+  .activcardimg1 img ,
+  .activcardimg2 img,
+  .activcardimg3 img,
+  .activcardimg4 img,
+  .activcardimg5 img,
+  .activcardimg6 img{
+    border-radius: 1rem 1rem 0 0;
+    height: 7.5rem;
+    object-fit: cover;
+    width: 100%;
+  }
+  .activarea{
+    display: flex;
+    flex-direction: column;
+  }
+  .footerarea{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*--------FOOTER SECTION-------*/
+
+.footerarea{
+  background-color:#eeeeee;
+  padding:2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footercol{
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footercol a{
+  padding: 0.5rem;
 }
