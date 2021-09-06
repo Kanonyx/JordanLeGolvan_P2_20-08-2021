@@ -578,6 +578,12 @@ button {
   width: 100%;
 }
 
+
+.activcard:hover {
+  transform:scale(1.02);
+  cursor: pointer;
+}
+
 @media (max-width: 1000px) {
   .activcard1,
   .activcard2,
