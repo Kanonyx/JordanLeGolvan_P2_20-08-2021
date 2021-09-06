@@ -55,10 +55,10 @@ nav {
   padding: 2rem;
 }
 .searchtitle h1 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .searchtitle p {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 @media (max-width: 800px) {
@@ -595,22 +595,22 @@ button {
     width: inherit;
     max-width: inherit;
   }
-  .activcardimg1 img ,
+  .activcardimg1 img,
   .activcardimg2 img,
   .activcardimg3 img,
   .activcardimg4 img,
   .activcardimg5 img,
-  .activcardimg6 img{
+  .activcardimg6 img {
     border-radius: 1rem 1rem 0 0;
     height: 7.5rem;
     object-fit: cover;
     width: 100%;
   }
-  .activarea{
+  .activarea {
     display: flex;
     flex-direction: column;
   }
-  .footerarea{
+  .footerarea {
     display: flex;
     flex-direction: column;
   }
@@ -618,20 +618,19 @@ button {
 
 /*--------FOOTER SECTION-------*/
 
-.footerarea{
-  background-color:#eeeeee;
-  padding:2rem;
+.footerarea {
+  background-color: #eeeeee;
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
 }
 
-.footercol{
+.footercol {
   flex-basis: 33%;
   display: flex;
   flex-direction: column;
-  
 }
 
-.footercol a{
+.footercol a {
   padding: 0.5rem;
 }
