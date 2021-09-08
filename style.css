@@ -79,6 +79,7 @@ nav {
     border-bottom: 3px solid #eeeeee;
     flex-basis: 50%;
     align-items: center;
+    transition-duration: 0.2s;
   }
   .hostbtn {
     border-bottom-color: #0065fc;
@@ -184,7 +185,7 @@ button {
   display: flex;
   text-align: center;
   align-items: center;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 
 .filtericons {
@@ -298,7 +299,6 @@ button {
 
 .popular {
   margin: 1rem;
-
   order: 1;
   flex-basis: 30%;
   border-radius: 1rem;
@@ -323,6 +323,7 @@ button {
   height: 20rem;
   min-width: 15rem;
   margin-top: minimize;
+  transition-duration: 0.2s;
 }
 
 .popcardimg {
@@ -357,6 +358,7 @@ button {
 .popcard:hover {
   transform: scale(1.02);
   cursor: pointer;
+  box-shadow: 0 0 16px #accdff;
 }
 
 .host h3 {
@@ -369,7 +371,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
   padding: 1rem 0rem 2rem 0;
 }
 
@@ -420,6 +421,7 @@ button {
   flex-direction: column;
   min-width: 13rem;
   flex-basis: 25%;
+  transition-duration: 0.2s;
 }
 
 .whitespace {
@@ -436,11 +438,22 @@ button {
 .hostcard:hover {
   transform: scale(1.02);
   cursor: pointer;
+  box-shadow: 0 0 16px #92baf7
 }
 
 .afplus {
   padding: 3rem;
   margin: 0 0 1 0;
+}
+
+
+@media (max-width: 1140px){
+  .hostcardarea {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: inherit;
+  }
+
 }
 
 @media (max-width: 800px) {
