@@ -92,18 +92,20 @@ nav {
 /*-------------SEARCHBOX-----------*/
 
 .searcharea {
-  margin: 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .searchboxzone {
-  display: inline-flex;
-  margin: 1rem 0;
+  
 }
 
 form {
   border-top: none;
   border-bottom: none;
-  display: inline-flex;
+  display: flex;
+  margin: 2rem 0;
 }
 
 .mapsicon {
@@ -119,11 +121,14 @@ input {
   border-left: none;
   border-right: none;
   padding: 0.45rem;
+  flex-basis: 70%;
+  max-width: 15rem;
 }
 
 input::placeholder {
   color: black;
   font-weight: bold;
+  font: "raleway", "sans serif";
 }
 
 button {
@@ -149,6 +154,8 @@ button {
     display: initial;
     padding: 0 0.2rem;
   }
+
+  
 }
 
 /*------------FILTERS-------------*/
@@ -162,12 +169,13 @@ button {
   justify-content: flex-start;
 }
 
-.filters :hover {
+.filter:hover {
   transform: scale(1.02);
   cursor: pointer;
 }
-.filtertitle :hover {
-  background-color: rgb(131, 173, 197);
+.filtername:hover {
+  background-color: #0065fc;
+  color: white;
 }
 
 .filter {
@@ -176,6 +184,7 @@ button {
   display: flex;
   text-align: center;
   align-items: center;
+  transition-duration: 0.3s;
 }
 
 .filtericons {
@@ -195,7 +204,7 @@ button {
   margin-right: 1rem;
 }
 
-.filternameeco {
+.eco {
   padding: 1rem 1rem 1rem 4rem;
   border-top: #eeeeee solid 3px;
   border-bottom: #eeeeee solid 3px;
@@ -209,7 +218,7 @@ button {
   text-align: right;
 }
 
-.filternamefam {
+.fam {
   padding: 1rem 1rem 1rem 4rem;
   border-top: #eeeeee solid 3px;
   border-bottom: #eeeeee solid 3px;
@@ -223,7 +232,7 @@ button {
   text-align: right;
 }
 
-.filternamerom {
+.rom {
   padding: 1rem 1rem 1rem 4rem;
   border-top: #eeeeee solid 3px;
   border-bottom: #eeeeee solid 3px;
@@ -237,7 +246,7 @@ button {
   text-align: right;
 }
 
-.filternameani {
+.ani {
   padding: 1rem 1rem 1rem 4rem;
   border-top: #eeeeee solid 3px;
   border-bottom: #eeeeee solid 3px;
@@ -578,9 +587,8 @@ button {
   width: 100%;
 }
 
-
 .activcard:hover {
-  transform:scale(1.02);
+  transform: scale(1.02);
   cursor: pointer;
 }
 
