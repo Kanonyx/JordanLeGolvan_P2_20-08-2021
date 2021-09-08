@@ -637,7 +637,7 @@ button {
   box-shadow: 0 0 16px #92baf7;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .activcard1,
   .activcard2,
   .activcard3,
